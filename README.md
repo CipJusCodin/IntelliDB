@@ -1,7 +1,7 @@
 # IntelliDB
 *A Transfer Learning Approach to Semantic Parsing SQL Queries*
 
-![](https://github.com/cipjuscodin/IntelliDB/blob/main/media/t2s_resized.png)
+![](https://github.com/CipJusCodin/IntelliDB/blob/master/media/t2s_resized.png)
 
 # Navigation
 * [Introduction](#introduction)
@@ -39,7 +39,7 @@ This project builds upon a baseline seq2seq model with attention, treating SQL g
 # MODELS
 
 # NMT
-![Architecture of NMT Model]([https://github.com/cipjuscodin/IntelliDB/blob/main/media/NMT_arch.png](https://github.com/CipJusCodin/IntelliDB/blob/master/media/NMT_arch.png))
+![Architecture of NMT Model](https://github.com/CipJusCodin/IntelliDB/blob/master/media/NMT_arch.png)
 
 Neural Machine Translation (NMT) is a sophisticated approach to automatic translation powered by artificial neural networks. Unlike traditional statistical methods, NMT processes the entire source sentence as a whole and generates the target translation more fluently and coherently. At its core, NMT uses an encoder to convert the source text into a contextual representation, and a decoder to produce the translated text. On top of this, an additional Attention layer is added to the model to take into account the context for each token in the input with the output. For this, the Bahdanau Attention mechanism was used to capture the attention between each output token against all input tokens.
 
@@ -54,7 +54,7 @@ BART (Bidirectional and Auto-Regressive Transformers) is a sequence-to-sequence 
 
 [Benchmarks](https://paperswithcode.com/sota/sql-to-text-on-wikisql)
 
-![Performance Metric](https://github.com/cipjuscodin/IntelliDB/blob/main/media/performance_metrics.png)
+![Performance Metric](https://github.com/CipJusCodin/IntelliDB/blob/master/media/performance_metrics.png)
 
 We hypothesized that the T5 model, known for its exceptional language modeling capabilities, would perform well in our task. However, our experiments revealed that BART outperformed both T5 and the standard NMT approach. BART's ability to handle noisy data, stemming from its training on diverse datasets, equipped it to generate accurate translations even for complex passages. While quantitative metrics showed a modest advantage for BART, qualitative analysis yielded promising results. BART-Base achieved a BLEU score of 95.5%, surpassing T5-Small's score of 94.4%. Similarly, BART-Base secured a METEOR score of 97.9%, edging out T5-Small's score of 97.4%. Notably, the incorporation of attention mechanisms allowed these models to achieve superior performance compared to state-of-the-art graph-based models on the WikiSQL dataset.
 
