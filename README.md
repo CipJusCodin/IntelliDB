@@ -39,7 +39,7 @@ This project builds upon a baseline seq2seq model with attention, treating SQL g
 # MODELS
 
 # NMT
-![Architecture of NMT Model](https://github.com/cipjuscodin/IntelliDB/blob/main/media/NMT_arch.png)
+![Architecture of NMT Model]([https://github.com/cipjuscodin/IntelliDB/blob/main/media/NMT_arch.png](https://github.com/CipJusCodin/IntelliDB/blob/master/media/NMT_arch.png))
 
 Neural Machine Translation (NMT) is a sophisticated approach to automatic translation powered by artificial neural networks. Unlike traditional statistical methods, NMT processes the entire source sentence as a whole and generates the target translation more fluently and coherently. At its core, NMT uses an encoder to convert the source text into a contextual representation, and a decoder to produce the translated text. On top of this, an additional Attention layer is added to the model to take into account the context for each token in the input with the output. For this, the Bahdanau Attention mechanism was used to capture the attention between each output token against all input tokens.
 
